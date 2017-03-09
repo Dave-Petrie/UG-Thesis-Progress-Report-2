@@ -1,0 +1,81 @@
+\section{Results and Discussion}
+
+\paragraph{}
+This section will be the initial discussion of testing, calculations and analysis. Progress made will be discussed here however Section 7 will be where the questions are specifically answered. 
+
+\subsection{QUT Electricity Consumption and Generation Data}
+
+\paragraph{}
+To design a feasible commercial building incorporating low voltage DC electricity an approximate building size and layout was required. Through liaising with Geoff he suggested contacting QUT's Building Management Services department who have access to building schematics and load data. Geoff Woods and Norman Higgins provided electrical drawings, single line diagrams, architectural drawings and electrical specifications for analysis. Additionally, a computer login to the Electricity Management System (EMS) at QUT was created. This interface tracks all the electricity consumed from every meter on campus. The data is access through a interface closely linked with the single line diagrams of buildings including main switchboards (MSBs), distribution boards (DBs) and transformers. This information is critical to understanding optimal power system design.  
+
+\paragraph{}
+The EMS system additionally outlines how the PV system at QUT operates and what power it generates. The solar panels act as a load reducing generator rather than direct appliance powering. During the day the panels generate electricity and with a regulator and converter combination the DC generated power is converted to AC and fed into the University's power systems. The benefit of utilising the equipment in this way is that it reduces peak consumption which is when electricity prices are highest. The major difference between this design and the one which this project seeks to design is the panels will be directly powering loads. It was not until Week 11 of Semester 1 that this data was made available leaving very little time before the presentation and final progress report.
+
+\newpage
+\subsection{Draft Floor Plan}
+
+\paragraph{}
+Before the schematics and floor plans for QUT's buildings were made available, an approximate small office area was modelled in AutoCAD with offices of 5 \si{m^2} represented in Figure \ref{fig:RoughFloorplan}. The purpose of this simulation was to analyse approximate lighting loads for the environment. Once the QUT data is analysed further, a more accurate floor plan will be created during the summer break as per the revised time line.    
+
+\begin{figure}[H]
+\hfill\includegraphics[width = 100mm]{images/Rough_Floorplan}\hspace*{\fill}
+\caption{Temporary Office Floor Plan Design} 
+\label{fig:RoughFloorplan}
+\end{figure} 
+
+\subsubsection{Draft Floor Plan Lighting Simulation}
+
+\paragraph{}
+After the initial room plans were created, the Australian Standards AS/NZS 1680.2.2 Interior and Workplace Lighting were consulted to produce a table of required lux values depending on room use. The standards is replicated and simplified below in Table \ref{table:LightingRequirements}.
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{|l|c|}
+\hline
+\textbf{Area or Application} & \multicolumn{1}{l|}{\textbf{Lux Requirement}} \\ \hline
+Rarely Visited & 40 \\ \hline
+Storage Rooms or Change Rooms & 80 \\ \hline
+Machine Work or Waiting Rooms & 160 \\ \hline
+Food Preparation Room & 240 \\ \hline
+Technical Office Room & 320 \\ \hline
+Visually Difficult Work & 500 \\ \hline
+\end{tabular}
+\caption{Lighting Requirements as per AS/NZS Standards \cite{StandardsAustralia2006_2}}
+\label{table:LightingRequirements}
+\end{table}
+
+These two data points were used for the initial draft planning of designs. This is not an accurate representation of a building, it was a starting point to work from to beginning analysis load requirements. Once the more accurate schematics and plans are created, a stronger assessment can be created and feasibly power system construction plans created. To estimate load requirements for this smaller, draft area, the simple floor plan CAD file was imported into Dialux4.13. This is a lighting design software solution to model options and predict approximate load demands that the LVDC system will be required to power.  
+
+\paragraph{}
+Through personal experience in building services design, I had an approximate idea of what amounts of lighting would be required for a 5 \si{m^2} room. I also knew that I would use LED down lights for simplicity and affordability. The difficult part is finding commercially available products that operate at a voltage level at either 48 V DC when the voltage drop over cabling is removed or at another level where an efficient DC to DC converter could be used. My goal was to have the average lux between 300 \si{lux} to 400 \si{lux}. This value was chosen as a technical office is an accurate assessment of most corporate buildings. As seen in Table \ref{table:draftFloorPlanDialuxOutputs} below, seven 20 \si{w} LED down lights reaches this specification. The way this was completed was through multiple tested and rendering of designs. It can be a tedious process but photometric files (also known as IES files) are also imported into Dialux and can be placed throughout the 3D model. This 3D model is shown in Figure \ref{fig:DraftLighting3D}. To find the optimal solution, the simplest method is to remove and add lights of varying wattage and test the lux distribution. An example of the lux distribution is shown in Figure \ref{fig:DraftLightingLux}. Appendix \ref{appenddix:DraftFloorPlanLighting} shows the full report of the final working model.   
+
+\begin{table}[!ht]
+\centering
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\multicolumn{1}{|l|}{\textbf{Down Light Wattage}} & \multicolumn{1}{l|}{\textbf{Quantity}} & \multicolumn{1}{l|}{\textbf{Max Lux}} & \multicolumn{1}{l|}{\textbf{Min Lux}} & \multicolumn{1}{l|}{\textbf{Average Lux}} \\ \hline
+11 & 6 & 114 & 3.8 & 73 \\ \hline
+11 & 10 & 180 & 7 & 114 \\ \hline
+20 & 8 & 680 & 16 & 383 \\ \hline
+20 & 7 & 677 & 12 & 344 \\ \hline
+\end{tabular}
+\caption{Dialux Outputs of Draft Floor Plan}
+\label{table:draftFloorPlanDialuxOutputs}
+\end{table} 
+
+\begin{figure}[H]
+\hfill\includegraphics[width = 100mm]{images/lighting_draft_3D}\hspace*{\fill}
+\caption{Draft Lighting Test 3D Render} 
+\label{fig:DraftLighting3D}
+\end{figure} 
+
+\begin{figure}[H]
+\hfill\includegraphics[width = 100mm]{images/lighting_draft_output}\hspace*{\fill}
+\caption{Draft Lighting Test Lux Output} 
+\label{fig:DraftLightingLux}
+\end{figure} 
+
+\paragraph{}
+Continuing from this example, the total lighting load of an office room would therefore be 140 W (20 W * 7 lights). To approximate the total demand for the entire draft floor plan, there are bathrooms, kitchen and hallways that all require less light. If the offices' load is approximately 1.1 kW it can be expected that the total area lighting load would approach 1.8 kW. This is a good starting point and more accurate modelling can now be done with QUT's provided power data. 
