@@ -17,32 +17,33 @@
 \subsubsection{Direct Current vs Alternating Current}
 
 \paragraph{}
-A very broad and contextual understanding must be made regarding the differences between DC and AC distribution systems. Compared with traditional AC designs, DC has the potential for effective power supply, smaller feeder loss, increased efficiency, more consistent power and direct access to renewable energy solutions \cite{Liu2014}. Alternating current is run to outlets at 240 V AC, 50 \si{Hz} and then devices are used to alter that source into device specific source requirements. Many household electronics such as computers, chargers, lighting and televisions operate internally at DC voltages meaning they each require either internal conversion circuitry or use a transformer between the powerpoint and device \cite{Paajanen2009}.
+A very broad and contextual understanding must be made regarding the differences between DC and AC distribution systems. Compared with traditional AC designs, DC has the potential for effective power supply, smaller feeder loss, increased efficiency, more consistent power and direct access to renewable energy solutions \cite{Liu2014}. Alternating current is run to outlets tes ttes tests at 240\,V\,AC, 50 \si{Hz} and then devices are used to alter that source into device specific source requirements. Many household electronics such as computers, chargers, lighting and televisions operate internally at DC voltages meaning they each require either internal conversion circuitry or use a transformer between the powerpoint and device \cite{Paajanen2009}.
 
 \paragraph{}
 AC was originally depicted as the better choice for power distributions due to there
 being no method at the time for controlling DC electricity at the load causing large
-losses from the generator to device \cite{Starke2008b}. To remedy this, AC distribution was used
-due to efficient transformers being developed to boost the voltage. AC remains the
+losses from the generator to device \cite{Starke2008b}. To remedy this, AC distribution was used due to efficient transformers being developed to boost the voltage. AC remains the
 fundamental power type but DC is growing in popularity with improved converters and
-increased frequency of DC energy sources \cite{Starke2008b}. Utilising DC generation systems could
-also fulfil the power industry's obligation to increase the sustainability of their systems
-and be more environmentally conscious \cite{Starke2008a}. The required converters to change the AC
-supply into DC for electronics reduces the efficiency (increasing voltage drop) of the
-overall system \cite{Starke2008b}.    
+increased quantity of DC energy sources \cite{Starke2008b}. Utilising DC generation systems could also fulfil the power industry's obligation to increase the sustainability of their systems and be more environmentally conscious \cite{Starke2008a}. The required converters to change the AC supply into DC for electronics reduces the efficiency (increasing voltage drop) of the overall system \cite{Starke2008b}.    
+
+\subsubsection{Voltage Levels as per Australian Standards}
+
+\paragraph{}
+The Australian Standards (AS/NZS 3000: Wiring Rules) outline the specific voltage levels that distinguish circuits \cite{StandardsAustralia2007}. This information is required for both separate standards related to the design and distribution of each chosen voltage level. Extra-Low Voltage is any voltage that is either 50\,V\,AC or 120\,V,DC ripple free \cite{StandardsAustralia2007}. Low Voltage is any level above Extra-Low Voltage but not exceeding 1000\,V\,AC or 1500\,V\,DC \cite{StandardsAustralia2007}. The final level is High Voltage which is anything exceeding Low-Voltage \cite{StandardsAustralia2007}.  
+
 
 \subsubsection{Low Voltage Direct Current}
 
 \paragraph{}
-DC power is currently restricted to special applications such as telecommunications, electric vehciles and high-voltage direct current (HVDC) transmission \cite{Salomonsson2007}. Low-voltage DC power systems at 48 V DC has been used fairly widely with telecommunications systems but is recently facing issues due to the high power requirements of computer system upgrades \cite{Salomonsson2007}. Studies have shown that the 48 V DC system still remains more efficient than a 270 V DC or 200 V AC but further investigation needs to be done into 230 V DC and 325 V DC through retrofitting existing low voltage AC installations \cite{Salomonsson2007}. PV generators are used frequently for these forms of power distribution systems as it can be powered directly or use simple DC to DC converters for different devices. Utilising a DC distribution system makes it easier to incorporate local power generation. This reduces costs and local power us unaffected by issues with power grid \cite{Starke2008a}. 
+DC power is currently restricted to special applications such as telecommunications, electric vehciles and high-voltage direct current (HVDC) transmission \cite{Salomonsson2007}. Low-voltage DC power systems at 48 V DC has been used fairly widely with telecommunications systems but is recently facing issues due to the high power requirements of computer system upgrades \cite{Salomonsson2007}. Studies have shown that the 48\,V\,DC system still remains more efficient than a 270\,V\,DC or 200\,V\,AC but further investigation needs to be done into 230\,V\,DC and 325\,V\,DC through retrofitting existing low voltage AC installations \cite{Salomonsson2007}. PV generators are used frequently for these forms of power distribution systems as it can be powered directly or use simple DC to DC converters for different devices. Utilising a DC distribution system makes it easier to incorporate local power generation. This reduces costs and local power us unaffected by issues with power grid \cite{Starke2008a}. 
 
 \subsubsection{Low Voltage Direct Current in Telecommunications}
 
 \paragraph{}
-Using low voltage energy distribution grids for high-speed communications networking can open up the possibility to utilities for expansions of widespread local area networks \cite{Waldeck1998}. This could be services such as telephony and internet access without the necessity of additional cabling \cite{Waldeck1998}. Firstly, this voltage level is chosen due to it being marginally under the maximum for low voltage power and still considered a "safe low voltage". Additionally, this voltage level could be backed up by battery systems with four 12 \si{V} batteries in series similar to Figure \ref{fig:48VTelecomms}. Many data centres or communications rooms for corporate buildings will establish arrays of 48 \si{V} battery banks \cite{website:48VTelecomms}. A solution for areas without large enough storage areas for are limited and power demands are low a single 12 \si{v} battery with a 12 \si{V} to 48 \si{V} boost converter can be used \cite{website:48VTelecomms}. This setup is shown in Figure \ref{fig:48VTelecomms}. Additionally, due to this nature of power telecomms, standalone systems are becoming a more suitable means of supply \cite{Ribeiro2009}. Photovoltaic arrays, due to their DC source nature, could be used with a DC to DC boost converter and regulator to power these systems.   
+Using low voltage energy distribution grids for high-speed communications networking can open up the possibility to utilities for expansions of widespread local area networks \cite{Waldeck1998}. This could be services such as telephony and internet access without the necessity of additional cabling \cite{Waldeck1998}. Firstly, this voltage level is chosen due to it being under the maximum for low voltage power and still considered a ``safe low voltage". Additionally, this voltage level could be backed up by battery systems with four 12 \si{V} batteries in series similar to Figure \ref{fig:48VTelecomms}. Many data centres or communications rooms for corporate buildings will establish arrays of 48 \si{V} battery banks \cite{website:48VTelecomms}. A solution for areas without large enough storage areas for are limited and power demands are low a single 12 \si{v} battery with a 12 \si{V} to 48 \si{V} boost converter can be used \cite{website:48VTelecomms}. This setup is shown in Figure \ref{fig:48VTelecomms}. Additionally, due to this nature of power telecomms, standalone systems are becoming a more suitable means of supply \cite{Ribeiro2009}. Photovoltaic arrays, due to their DC source nature, could be used with a DC to DC boost converter and regulator to power these systems.   
 
 \begin{figure}[H]
-\hfill\includegraphics[width = 100mm]{images/12V_Telecomms}\hspace*{\fill}
+\hfill\includegraphics[width = 100mm]{images/12V_Telecomms.png}\hspace*{\fill}
 \caption{Single Battery Communications Room \cite{website:48VTelecomms}}
 \label{fig:48VTelecomms}
 \end{figure}   
@@ -77,7 +78,7 @@ In order to increase efficiency of power systems through utilising a low voltage
 \subsubsection{Photo-Voltaic Arrays and DC Arcing}
 
 \paragraph{}
-With the popularity of PV systems increasing, the risk of DC arc faults are being analysed further \cite{Spooner2008}. PV arrays and power systems are being designed with converters boosting voltages to 800 V DC and 1000 V DC. This is being done for efficiency and cost reduction purposes however it leads to large amounts of stress on insulation systems and arc faults developing \cite{Spooner2008}. This causes more safety concerns than traditional AC systems. There are three major causes of arc fault risk; high DC voltage, high DC current and large distribution of DC wiring \cite{website:DC-Arching}.
+With the popularity of PV systems increasing, the risk of DC arc faults are being analysed further \cite{Spooner2008}. PV arrays and power systems are being designed with converters boosting voltages to 800\,V\,DC and 1000\,V\,DC. This is being done for efficiency and cost reduction purposes however it leads to large amounts of stress on insulation systems and arc faults developing \cite{Spooner2008}. This causes more safety concerns than traditional AC systems. There are three major causes of arc fault risk; high DC voltage, high DC current and large distribution of DC wiring \cite{website:DC-Arching}.
 
 \paragraph{}
 Photovoltaic generators are non-linear sources that vary with intensity of sunlight and behave mainly as a DC current source \cite{Ribeiro2009}. There is an additional negative of PV systems than AC due to the occurence of DC arc faults. The DC circuits that combine to form the PV power system distribution are able to generate and syustain arcs of considerable intensitives. DC arcs have their uses in applications such as welding, but for a power system they are only a risk \cite{Ribeiro2009}. The risks of DC arcs can be reduced by incorporating proper safety equipment and reducing DC voltage levels \cite{Ribeiro2009}.        
@@ -142,6 +143,7 @@ Lumens/Watt & 13.3 & 53.3 & 114.3 \\ \hline
 \caption{Comparing Efficiencies of Lighting Types (Bulbs) \cite{Koh2011}}
 \label{LightingTypes}
 \end{table}
+
 
 
 
