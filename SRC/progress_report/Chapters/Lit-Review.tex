@@ -77,7 +77,41 @@ In order to increase efficiency of power systems through utilising a low voltage
 With the popularity of PV systems increasing, the risk of DC arc faults are being analysed further \cite{Spooner2008}. PV arrays and power systems are being designed with converters boosting voltages to 800\,V\,DC and 1000\,V\,DC. This is being done for efficiency and cost reduction purposes however it leads to large amounts of stress on insulation systems and arc faults developing \cite{Spooner2008}. This causes more safety concerns than traditional AC systems. There are three major causes of arc fault risk; high DC voltage, high DC current and large distribution of DC wiring \cite{website:DC-Arching}.
 
 \paragraph{}
-Photovoltaic generators are non-linear sources that vary with intensity of sunlight and behave mainly as a DC current source \cite{Ribeiro2009}. There is an additional negative of PV systems than AC due to the occurrence of DC arc faults. The DC circuits that combine to form the PV power system distribution are able to generate and sustain arcs of considerable intensities. DC arcs have their uses in applications such as welding, but for a power system they are only a risk \cite{Ribeiro2009}. The risks of DC arcs can be reduced by incorporating proper safety equipment and reducing DC voltage levels \cite{Ribeiro2009}.        
+Photovoltaic generators are non-linear sources that vary with intensity of sunlight and behave mainly as a DC current source \cite{Ribeiro2009}. There is an additional negative of PV systems than AC due to the occurrence of DC arc faults. The DC circuits that combine to form the PV power system distribution are able to generate and sustain arcs of considerable intensities. DC arcs have their uses in applications such as welding, but for a power system they are only a risk \cite{Ribeiro2009}. The risks of DC arcs can be reduced by incorporating proper safety equipment and reducing DC voltage levels \cite{Ribeiro2009}. 
+
+\subsubsection{Large Scale Batteries}
+
+\paragraph{}
+Due to photovolatic systems producing power during daylight but in the evenings will not produce, a solution needs to be established for power consumption during non-production hours. There are additional benefits of solar battery storage as well due to the financial markets associated with energy \cite{Haberlin2012}. For example, if the spot price for energy is specifically high later in the evening due to increased demand, a user with battery storage from the day's production could export into the grid and make significant profit. It is not always a necessity to have battery storage however there are certainly benefits in particular situations. Figure \ref{fig:pv-connection-options} shows a broad, high-level view of pv system connection options \cite{Haberlin2012}. 
+
+\begin{figure}[H]
+	\hfill\includegraphics[width = 100mm] {images/pv-system-options}\hspace*{\fill}
+	\caption{PV System Connection Options \cite{Haberlin2012}}
+	\label{fig:pv-connection-options}
+\end{figure} 
+
+\paragraph{}
+Incorporating a battery into the design of the system is not extremely complicated. Figure \ref{fig:pv-connection-layouts} below shows a suggested connection option. The devices as per their numbered labels are:
+
+\begin{enumerate}[noitemsep]
+	\item Solar generator
+	\item Charge controller	
+	\item Battery
+	\item Discharge controller
+	\item DC-DC converter
+	\item DC-AC converter
+	\item Consumers
+	\item Possible auxiliary generators (such as diesel or wind)
+\end{enumerate}
+
+\begin{figure}[H]
+	\hfill\includegraphics[width = 100mm] {images/pv-system-layout}\hspace*{\fill}
+	\caption{PV System Design with Battery \cite{Haberlin2012}}
+	\label{fig:pv-connection-layouts}
+\end{figure} 
+
+\paragraph{}
+The storage process occurs in item 3; the battery. The nominal voltage of this device in a stand-alone system should math the installation's system voltage \cite{Haberlin2012}. There are voltage level alternatives depending on the design of the system such as 12\,V, 24\,V, 48\,V or higher for larger installations \cite{Haberlin2012}. In Australia, recent developments have seen lithium-ion battery solutions being used for solar storage far more than older technologies such as lead acid \cite{website:OffGridEnergy1}. Lithium-ion has many advantages for hybrid storage applications. They have a higher energy density and have the ability to regularly discharge \cite{website:OffGridEnergy1}. The estimated lifespan of these devices is a minimum of 15 years \cite{website:OffGridEnergy1}. A popular development in this market is the Tesla Powerwall which incorporates the same batteries that Tesla uses in their cars but in a different application \cite{Tesla1}.                     
 
 \subsubsection{Electrical Safety Mechanisms}
 
@@ -132,6 +166,15 @@ Lumens/Watt & 13.3 & 53.3 & 114.3 \\ \hline
 \subsubsection{Direct Current Switchgear}
 
 \paragraph{}
-Direct current devices will be required for a system that is not standard alternating current. With the increase in purely DC systems used for a variety of purposes, DC switchgear is readily available commercially. Eaton have a range of DC-DC Circuit breakers that are designed for energy storage, transportation and industrial DC circuits \cite{website:Eaton1}. Specific design mechanisms were established in order to meet the protection requirements for PV systems.   
+Direct current devices will be required for a system that is not standard alternating current. With the increase in purely DC systems used for a variety of purposes, DC switchgear is readily available commercially. Eaton have a range of DC-DC Circuit breakers that are designed for energy storage, transportation and industrial DC circuits \cite{website:Eaton1}. Specific design mechanisms were established in order to meet the protection requirements for PV systems. 
+
+\paragraph{}
+For designs that use a large amount of DC devices, efficiency purposes suggest using a DC distribution board. There are commercially available products designed for such purposes. For example, Myers Power Products, Inc have designed a range of DC power solutions including traction power substations, DC switchgear, DC circuit breakers, rectifiers and inverters if required \cite{website:Myers1}. An example of a DC distribution room is shown in Figure \ref{fig:dc-switchgear-room}.         
+
+\begin{figure}[H]
+	\hfill\includegraphics[width=100mm]{images/dc-switchgear}\hspace*{\fill}
+	\caption{Example of DC Main Switchboard \cite{website:Myers1}} 
+	\label{fig:dc-switchgear-room}
+\end{figure}
 
 \newpage
