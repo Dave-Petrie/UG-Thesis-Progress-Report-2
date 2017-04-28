@@ -1,4 +1,4 @@
-\subsection{Can Photovoltaic Systems Be Used Effectively for this Application?}
+\subsection{Can Photovoltaic Systems Be Used Effectively for this Application?} \label{section:question2}
 
 \paragraph{}
 Photovoltaic systems are being considered for this project due to their nature to produce electricity in DC form naturally. By doing so this negates the need for converting the power from DC to AC or vice versa. As discussed, this reduces inefficiencies and allows for the opportunity to produce an overall increased efficiency system compared to those traditionally used in commercial buildings today. 
@@ -74,14 +74,14 @@ To model the test system, a standard module of 250\,W\,Peak was chosen from the 
 For this level of analysis, again an average inverter requires select to calculate the approximate losses expected from an AC PV system. Because this installation is expected to be incorporated into a commercial building, a 20\,kW inverter was selected. A standard inverter was chosen over micro-inverters due to the increased efficiency they generally provide in larger than residential installations \cite{MicroInverterThesis}. The specific model selected is the SMA America:SB3800TL-US-22 with a 96.2\,\% weighted efficiency and of course a 240\,V\,AC nominal AC output for feeding into existing power infrastructure. 
 
 \paragraph{}
-For the test model, strings were made of 30 panels with 8 strings in parallel to simulate a 60\,kWp system. There are a variety of assumptions that were made in order to model and approximate losses including those listed below. These losses are represented in Figure\ref{fig:SAM-Model-1}. 
+For the test model, strings were made of 234 panels with 26 strings of 9 modules to simulate a 60\,kWp system. There are a variety of assumptions that were made in order to model and approximate losses including those listed below. These losses are represented in Figure\ref{fig:SAM-Model-1}. 
 
 \begin{itemize}[noitemsep,nolistsep]
 	\item Location of Brisbane, Australia with automatically imported weather data
-	\item Tilt of 5 degrees
+	\item Tilt of 27 degrees (Brisbane lattitude)
 	\item Azimuth of 0 degrees (North facing)
-	\item Ground Coverage Ratio (GCR) of 0.1 therefore assuming minimal shading
-	\item Flat mounted onto roof
+	\item Ground Coverage Ratio (GCR) of 0.6 assuming tightly packed panels
+	\item Fixed mounted onto roof 
 \end{itemize}
 
 \begin{figure}[H]
@@ -91,10 +91,10 @@ For the test model, strings were made of 30 panels with 8 strings in parallel to
 \end{figure}      
 
 \paragraph{}
-SAM results indicate the losses approximated over one year of data and simulations. As can be seen from Figure \ref{fig:SAM-Model-2}, the major losses are from soiling, the module, inverter clipping and DC wiring. Of those, the proposed DC system could remove the 54.134\% loss from the inverters and incorporate a more efficient DC to DC converter.   
+SAM results indicate the losses approximated over one year of data and simulations. As can be seen from Figure \ref{fig:SAM-Model-2}, the major losses are from soiling, the module, inverter clipping and DC wiring. Of those, the proposed DC system could remove the 4.365\% loss from the inverters and incorporate a more efficient DC to DC converter.   
 
 \begin{figure}[H]
-\hfill\includegraphics[width = 120mm]{images/sam-1-system-losses}\hspace*{\fill}
+\hfill\includegraphics[width = 100mm]{images/sam-1-system-losses}\hspace*{\fill}
 \caption{SAM System Design: Test Model 1 Losses} 
 \label{fig:SAM-Model-2}
 \end{figure}
@@ -124,7 +124,7 @@ Figure \ref{fig:PV-Module-Spec-Graph} displays the curve representing voltage, c
 \subsubsection{Mounting of Modules}
 
 \paragraph{}
-***TO BE COMPLETED***
+As discussed in the Section \ref{section:photovoltatic-mounting} there are multiple options for PV mounting. The finalised chosen method will be discussed further in Question 4. For initial calculations, fixed mounting is assumed and the tilt should be targeted towards the latitude of the location wherever possible. For Brisbane, this means the optimal tilt would be 27 degrees.   
 
 
 %%%%%%%%%%%%%%%
